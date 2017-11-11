@@ -1,0 +1,15 @@
+<%= simple_form_for(@anuncio) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.input :titulo %>
+    <%= f.input :contenido %>
+    <%= f.input :fecha %>
+    <%= f.input :requisitos %>
+    <%= f.input :vacante %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>
